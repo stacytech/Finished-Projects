@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"name": "whatsapp animation",
+		"path": "."
+	},
+	{
+		"name": "Finished-Projects",
+		"path": "Finished-Projects"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "whatsapp animation"
+  }
+}
