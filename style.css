@@ -78,38 +78,56 @@ body {
     transform: translate(-50%, -50%);
     width:250px;
     height:250px;
-   }
+}
+
+    
 
 /* 5. Individual Heart Styling (Uses heart.png image) */
 .heart {
     width: 20px; 
     height: 15px; 
-    
-    /* CRITICAL: Loads the image and ensures visibility */
     background: url("heart.png") center/contain no-repeat;
-    
-    position: absolute; /* ESSENTIAL for XY placement */
-    
+    position: absolute; 
     opacity: 0;         
     transform: scale(0);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     border-radius: 50%;
+    color: #ff0000; 
+    font-size: 2em; 
+    font-weight: bold;
+    animation: glow 1.5s ease-in-out infinite alternate ;
 }
-
-
+@keyframes glow {
+    0%{
+        filter: 
+        drop-shadow(0 0 5px #960808)
+        drop-shadow(0 0 5px #c40e0e)
+        drop-shadow(0 0 5px #990000);
+    }
+    100%{
+        filter: 
+        drop-shadow(0 0 20px #1d1c1c)
+        drop-shadow(0 0 20px rgb(87, 13, 18))
+        drop-shadow(0 0 20px #660000);
+    }
+}
+    
+ 
 /* 6. The Final Message */
 #message {
     position: absolute;
-    bottom: 6%;
-    left: 50%;
+    bottom: 2%;
+    left: 35%;
     transform: translateX(-50%);
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 10px;
     color: #ff0000;
     opacity: 0; 
     z-index: 20;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
+    font-weight: 200;
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    white-space: normal;
     animation: stopRedGlow 1.5s ease-in-out infinite alternate;
 }
 @keyframes stopRedGlow {

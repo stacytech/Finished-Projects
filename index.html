@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhatsApp Animation</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="image" href="./firstimage.jpg">
+    <link rel="preload" as="image" href="./secondImage.jpg">
+    <link rel="preload" as="image" href="./image3.jpg">
+    <link rel="preload" as="image" href="./lastimage.jpg">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
    <style>
-    #words{
-    font-size: 10px;
-    bottom: 4rem;
-    position: absolute;
-    left: 20rem;
-
-    }
+    
+    
 
     @media (MAX-WIDTH:375PX) {
         #animation-card{
@@ -23,20 +23,23 @@
             right:0;
         }
     }
+   
    </style>
 </head>
 <body class="slideshow" >
-    <audio id="backgroundMusic" src="./Forever-sweet.mp3" autoplay loop hidden></audio>
+    
 
    
    
     <img id="whatsapp-trigger" src="WhatsApp Image 2025-10-14 at 15.08.56_060810d7.jpg" alt="WhatsApp Icon">
-
+     
     <div id="animation-stage">
         <div id="animation-card">
             
             <img id="little-man" src="littleeemannn.png" alt="Little Man">
-
+                
+            
+  
             <div id="heart-grid">
                 <div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div> <div class="heart"></div> <div class="heart"></div> <div class="heart"></div>
                 <div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div> <div class="heart"></div> <div class="heart"></div> <div class="heart"></div>
@@ -47,25 +50,32 @@
                 <div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div><div class="heart"></div> <div class="heart"></div> <div class="heart"></div> <div class="heart"></div>
               
             </div>
+    
 
-            <div id="message">Happy 2 Years Anniversary babe</div>
-             <h1 id="words">
-        It started in a day <br>
-        and days turn to weeks <br> 
-        and weeks turn to months <br> 
-        and months turn into a year <br>
-        and a year turn to 2 years. <br>
-        it has been an amazing journey <br> 
-        and today marks an amazing day <br> 
-        I know I asked you out when we first met <br> 
-        and now am asking you out again <br> 
-        but this time around Olori mi, <br> 
-        Adunni mi, Ayo mi, Ife mi <br> 
-        will you continue this journey <br>
-        of love with me?🌹</h1>
+            <div id="message">
+            <p>It started in a day 
+        and days turn to weeks  
+        and weeks turn to months 
+        and months turn into a year 
+        and a year turn to 2 years.
+        it has been an amazing journey 
+        and today marks an amazing day 
+        I know I asked you out when we first met 
+        and now am asking you out again but this time around Olori mi, Adunni mi, Ayo mi, Ife mi will you continue this journey of love with me?🌹</p>
 
+            </div>
+         
+        
 
       <div class="slideshow"></div>
+      <audio id="bgmusic" src="Foreversweet.mp3" autoplay muted loop playsinline></audio>
+
+<script>
+document.addEventListener("click", function() {
+    const m = document.getElementById("bgmusic");
+    m.muted = false; /*unmute after first tap/click*/
+}, { once:true });
+</script>
 
 
 
