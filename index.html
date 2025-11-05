@@ -69,7 +69,7 @@
             </div>
         </div>
     </div>
-    
+
          
         
 
@@ -78,6 +78,10 @@
 
 <script>
 document.addEventListener("click", function() {
+    const m = document.getElementById("bgmusic");
+    m.muted = false; /*unmute after first tap/click*/
+}, { once:true });
+document.addEventListener("touchstart", function() {
     const m = document.getElementById("bgmusic");
     m.muted = false; /*unmute after first tap/click*/
 }, { once:true });
