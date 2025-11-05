@@ -171,7 +171,7 @@ body, html {
 /* the slideshow animation */
 @keyframes slideShow {
   0%   { background-image: url('images/firstimage.jpg'); }
-  33%  { background-image: url('images/second\ image.jpg'); }
+  33%  { background-image: url('images/secondimage.jpg'); }
   66%  { background-image: url('images/image3.jpg'); }
   100% { background-image: url('images/lastimage.jpg'); }
 }
