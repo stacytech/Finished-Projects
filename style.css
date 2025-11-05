@@ -101,15 +101,11 @@ body {
     0%{
         filter: 
         drop-shadow(0 0 5px #960808)
-        drop-shadow(0 0 5px #c40e0e)
-        drop-shadow(0 0 5px #990000);
     }
     100%{
         filter: 
         drop-shadow(0 0 20px #1d1c1c)
-        drop-shadow(0 0 20px rgb(87, 13, 18))
-        drop-shadow(0 0 20px #660000);
-    }
+    }      
 }
     
  
@@ -174,10 +170,10 @@ body, html {
 
 /* the slideshow animation */
 @keyframes slideShow {
-  0%   { background-image: url('./firstimage.jpg'); }
-  33%  { background-image: url('./second\ image.jpg'); }
-  66%  { background-image: url('./image3.jpg'); }
-  100% { background-image: url('./lastimage.jpg'); }
+  0%   { background-image: url('images/firstimage.jpg'); }
+  33%  { background-image: url('images/second\ image.jpg'); }
+  66%  { background-image: url('images/image3.jpg'); }
+  100% { background-image: url('images/lastimage.jpg'); }
 }
 @media (max-width: 430px){
    h1{
