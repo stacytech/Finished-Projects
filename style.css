@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     flex-direction: column;
@@ -154,9 +155,17 @@ body, html {
   height: 100%;
   margin: 0;
 }
+.slideshow-card{
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    animation: slideBG 20s infinite;
+    z-index: -1;
+}
 
 /* slideshow background */
-.slideshow {
+.slideshow-bg {
   position: fixed;
   top: 0;
   left: 0;
@@ -165,11 +174,11 @@ body, html {
   z-index: -1; /* keeps it behind your card */
   background-size: cover;
   background-position: center;
-  animation: slideShow 20s infinite;
+  animation: slideBG 20s infinite;
 }
 
 /* the slideshow animation */
-@keyframes slideShow {
+@keyframes slideBG {
   0%   { background-image: url('images/firstimage.jpg'); }
   33%  { background-image: url('images/secondimage.jpg'); }
   66%  { background-image: url('images/image3.jpg'); }
